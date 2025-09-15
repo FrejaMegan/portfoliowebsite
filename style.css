@@ -1,0 +1,104 @@
+/* ----------------------Mobile First CSS-----------------------*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Body baggrund og tekst */
+body {
+    background-color: #F2EFE9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #038C73; 
+    padding: 15px;
+}
+
+header nav .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    text-align: center;
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: #F2EFE9;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+header nav .menu li a:hover {
+    color: #FFFFFF; 
+    transform: translateY(-3px); 
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
+}
+
+
+/* Main */
+main {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: #5B5B5B;
+}
+
+/* Footer */
+footer {
+    background-color: #038C73; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* ----------------------Tablet & Desktop-----------------------*/
+@media (min-width: 768px) {
+    header nav .menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    header nav .menu li a {
+        font-size: 1.2rem; 
+    }
+
+     main h1 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    header nav .menu {
+        gap: 60px; 
+    }
+
+    header nav .menu li a {
+        font-size: 1.3rem; 
+    }
+
+    main {
+        min-height: 70vh;
+        padding: 40px;
+    }
+}

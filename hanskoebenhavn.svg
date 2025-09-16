@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1575 1209">
+  <g id="map">
+    <image width="1575" height="1209" xlink:href="hanskoebenhavn.png"/>
+  </g>
+  <g id="infobokse">
+    <g id="points">
+      <circle id="punkt4" cx="617.39" cy="478.27" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
+      <circle id="punkt3" cx="701.89" cy="724.63" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
+      <circle id="punkt2" cx="198.31" cy="974.87" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
+      <circle id="punkt1" cx="341.49" cy="373.15" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
+    </g>
+    <rect id="info-1" x="198.76" y="182.58" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+    <rect id="info-2" x="60.78" y="756.15" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+    <rect id="info-3" x="559.16" y="770.88" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+    <rect id="info-4" x="513.65" y="280.47" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+  </g>
+</svg>

@@ -102,3 +102,33 @@ footer {
         padding: 40px;
     }
 }
+
+
+
+/* ----------------------explainer CSS-----------------------*/
+/* Mobile first styling*/
+main {
+  display: flex;
+  flex-direction: column; 
+  gap: 1rem; 
+  align-items: center; 
+}
+
+main img {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto;
+  display: block;
+}
+
+/* Desktop*/
+@media (min-width: 768px) {
+  main {
+    flex-direction: row; 
+    justify-content: center; 
+  }
+
+  main img {
+    width: 45%; 
+  }
+}

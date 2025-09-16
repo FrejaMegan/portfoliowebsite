@@ -2,108 +2,117 @@
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Body baggrund og tekst */
 body {
-    background-color: #F2EFE9;
-    color: #333;
-    line-height: 1.6;
+  background-color: #f2efe9;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #038C73; 
-    padding: 15px;
+  background-color: #038c73;
+  padding: 15px;
 }
 
 header nav .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
 
 header nav .menu li a {
-    text-decoration: none;
-    color: #F2EFE9;
-    font-weight: bold;
-    padding: 10px 0;
-    display: block;
-    transition: all 0.3s ease;
-    position: relative;
-    font-size: 1.2rem;
+  text-decoration: none;
+  color: #f2efe9;
+  font-weight: bold;
+  padding: 10px 0;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 1.2rem;
 }
 
 header nav .menu li a:hover {
-    color: #FFFFFF; 
-    transform: translateY(-3px); 
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.3); 
+  color: #ffffff;
+  transform: translateY(-3px);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
-
 
 /* Main */
 main {
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 main h1 {
-    font-size: 2rem;
-    color: #5B5B5B;
+  font-size: 2rem;
+  color: #5b5b5b;
+}
+/* SVG container */
+#map {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+#map svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Footer */
 footer {
-    background-color: #038C73; 
-    color: #FFFFFF;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9rem;
+  background-color: #038c73;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
 }
 
 /* ----------------------Tablet & Desktop-----------------------*/
 @media (min-width: 768px) {
-    header nav .menu {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
-    }
+  header nav .menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
 
-    header nav .menu li a {
-        font-size: 1.2rem; 
-    }
+  header nav .menu li a {
+    font-size: 1.2rem;
+  }
 
-     main h1 {
-        font-size: 5rem;
-    }
+  main h1 {
+    font-size: 5rem;
+  }
 }
 
 @media (min-width: 1024px) {
-    header nav .menu {
-        gap: 60px; 
-    }
+  header nav .menu {
+    gap: 60px;
+  }
 
-    header nav .menu li a {
-        font-size: 1.3rem; 
-    }
+  header nav .menu li a {
+    font-size: 1.3rem;
+  }
 
-    main {
-        min-height: 70vh;
-        padding: 40px;
-    }
+  main {
+    min-height: 70vh;
+    padding: 40px;
+  }
 }
-
-
 
 /* ----------------------explainer CSS-----------------------*/
 /* Mobile first styling*/
@@ -116,8 +125,8 @@ main {
 }
 
 main video {
-  width: 100%;      
-  max-width: 500px; 
+  width: 100%;
+  max-width: 500px;
   height: auto;
 }
 
@@ -132,4 +141,3 @@ main video {
     width: 45%;
   }
 }
-

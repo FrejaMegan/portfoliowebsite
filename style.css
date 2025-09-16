@@ -141,3 +141,7 @@ main video {
     width: 45%;
   }
 }
+
+video {
+  padding: 50px;
+}

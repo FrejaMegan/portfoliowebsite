@@ -9,14 +9,12 @@ async function runProgram() {
   let active;
   let infoboks;
 
-  // 1. Load svg map
-  //------------------------------------------------------------------------------------
-  let mySvg = await fetch("hansscherfigkort.svg");
+  // 1. Load SVG
+  let mySvg = await fetch("./hansscherfigkort.svg");
   let svg = await mySvg.text();
   document.querySelector("#map").innerHTML = svg;
 
-  // 2. find infobokse og skjul dem
-  //------------------------------------------------------------------------------
+  // 2. Find og skjul infobokse
   let info_1 = document.querySelector("#info-1");
   let info_2 = document.querySelector("#info-2");
   let info_3 = document.querySelector("#info-3");
@@ -27,63 +25,36 @@ async function runProgram() {
   info_3.style.visibility = "hidden";
   info_4.style.visibility = "hidden";
 
-  // 3. Skift farve ved klik, og vis tekst
-  //-----------------------------------------------------------------------
+  // 3. Klik på punkter
   document.querySelector("#points").addEventListener("click", function (evt) {
     clicked(evt);
   });
 
-  //function clicked
-  //--------------------------------------------------------------------
   function clicked(obj) {
-    if (infoboks) {
-      infoboks.style.visibility = "hidden";
-    }
+    if (infoboks) infoboks.style.visibility = "hidden";
 
-    // a. find det klikkede element
     selected = obj.target;
-
-    // b. find det klikkede elementets ID
     selectedID = selected.getAttribute("id");
-
-    // c. find  det klikkede elements fillfarve
     color = selected.getAttribute("fill");
 
-    // d. vis infobokse
-    if (selectedID == "punkt1") {
-      info_1.style.visibility = "visible";
-      infoboks = info_1;
-    }
+    // Vis korrekt infoboks
+    if (selectedID === "punkt1") infoboks = info_1;
+    if (selectedID === "punkt2") infoboks = info_2;
+    if (selectedID === "punkt3") infoboks = info_3;
+    if (selectedID === "punkt4") infoboks = info_4;
 
-    if (selectedID == "punkt2") {
-      info_2.style.visibility = "visible";
-      infoboks = info_2;
-    }
+    if (infoboks) infoboks.style.visibility = "visible";
 
-    if (selectedID == "punkt3") {
-      info_3.style.visibility = "visible";
-      infoboks = info_3;
-    }
+    // Skift farve på tidligere aktiv
+    if (active && active !== selected) active.setAttribute("fill", "#32592b");
 
-    if (selectedID == "punkt4") {
-      info_4.style.visibility = "visible";
-      infoboks = info_4;
-    }
-
-    // 4. hvis der tidligere har været klikket skal det forige element skifte farve til original
-    if (active && active !== selected) {
-      active.setAttribute("fill", "#32592b");
-    }
-
-    //gør det klikkede til det aktive
     active = selected;
 
-    //skift farve på det valgte
-    if (color === "#32592b") {
-      document.querySelector("#" + selectedID).setAttribute("fill", "#123456");
-    } else {
-      document.querySelector("#" + selectedID).setAttribute("fill", "#32592b");
-      infoboks.style.visibility = "hidden";
+    // Skift farve på valgte punkt
+    if (color === "#32592b") selected.setAttribute("fill", "#123456");
+    else {
+      selected.setAttribute("fill", "#32592b");
+      if (infoboks) infoboks.style.visibility = "hidden";
     }
   }
 }

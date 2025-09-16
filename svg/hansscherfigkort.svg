@@ -1,46 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1575 1209">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1575 1209">
   <g id="map">
-    <image width="1575" height="1209" xlink:href="hanskoebenhavn.png"/>
+    <image width="1575" height="1209" href="hanskoebenhavn.png" />
   </g>
+
   <g id="infobokse">
     <g id="points">
-      <circle id="punkt4" cx="617.39" cy="478.27" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
-      <circle id="punkt3" cx="701.89" cy="724.63" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
-      <circle id="punkt2" cx="198.31" cy="974.87" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
-      <circle id="punkt1" cx="341.49" cy="373.15" r="10.71" fill="#32592b" stroke="#000" stroke-miterlimit="10"/>
+      <circle id="punkt4" cx="617.39" cy="478.27" r="10.71" fill="#32592b" stroke="#000"/>
+      <circle id="punkt3" cx="701.89" cy="724.63" r="10.71" fill="#32592b" stroke="#000"/>
+      <circle id="punkt2" cx="198.31" cy="974.87" r="10.71" fill="#32592b" stroke="#000"/>
+      <circle id="punkt1" cx="341.49" cy="373.15" r="10.71" fill="#32592b" stroke="#000"/>
     </g>
 
-    <!-- Infoboks 1 -->
     <g id="info-1" visibility="hidden">
-      <rect x="198.76" y="182.58" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+      <rect x="198.76" y="182.58" width="278.47" height="134.96" fill="#fffdea" stroke="#000"/>
       <text x="210" y="210" font-size="20" font-family="Arial" fill="#000">
         <tspan x="210" dy="0">Assistens Kirkegård hvor </tspan>
         <tspan x="210" dy="25">Hans Scherfig ligger begravet</tspan>
       </text>
     </g>
 
-    <!-- Infoboks 2 -->
     <g id="info-2" visibility="hidden">
-      <rect x="60.78" y="756.15" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+      <rect x="60.78" y="756.15" width="278.47" height="134.96" fill="#fffdea" stroke="#000"/>
       <text x="70" y="780" font-size="20" font-family="Arial" fill="#000">
         <tspan x="70" dy="0">Vestre Fængsel hvor Scherfig</tspan>
         <tspan x="70" dy="25">sad under besættelsen</tspan>
       </text>
     </g>
 
-    <!-- Infoboks 3 -->
     <g id="info-3" visibility="hidden">
-      <rect x="559.16" y="770.88" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+      <rect x="559.16" y="770.88" width="278.47" height="134.96" fill="#fffdea" stroke="#000"/>
       <text x="570" y="800" font-size="20" font-family="Arial" fill="#000">
         <tspan x="570" dy="0">Rigsarkivet hvor Scherfigs</tspan>
         <tspan x="570" dy="25">tekster og breve ligger</tspan>
       </text>
     </g>
 
-    <!-- Infoboks 4 -->
     <g id="info-4" visibility="hidden">
-      <rect x="513.65" y="280.47" width="278.47" height="134.96" fill="#fffdea" stroke="#000" stroke-miterlimit="10"/>
+      <rect x="513.65" y="280.47" width="278.47" height="134.96" fill="#fffdea" stroke="#000"/>
       <text x="525" y="310" font-size="20" font-family="Arial" fill="#000">
         <tspan x="525" dy="0">Botanisk Have hvor Scherfig</tspan>
         <tspan x="525" dy="25">fik ideer til jungemalerier</tspan>
@@ -48,3 +45,4 @@
     </g>
   </g>
 </svg>
+
